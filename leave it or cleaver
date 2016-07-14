@@ -1,0 +1,23 @@
+-- This shows how to define a function called cleaveWhenClose
+-- The function defines a parameter called target
+local function cleaveWhenClose(target)
+    local distance = hero:distanceTo(target)
+     if distance < 5 then
+         -- Put your attack code here
+    local     ready = hero:isReady("cleave")
+          hero:cleave(target)
+     else  
+         hero:attack(target)
+         
+    end
+end
+-- This code is not part of the function.
+while true do
+    local enemy = hero:findNearestEnemy()
+    if enemy then
+        -- Note that inside cleaveWhenClose, we refer to the enemy as target.
+        cleaveWhenClose(enemy)
+        else
+        hero:moveXY(41, 33)
+     end
+end
