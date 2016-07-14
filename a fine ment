@@ -1,0 +1,26 @@
+-- Peons are trying to steal your coins!
+-- Write a function to squash them before they can take your coins.
+
+local function pickUpCoin()
+    local coin = self:findNearestItem()
+    if coin then
+        self:moveXY(coin.pos.x, coin.pos.y)
+    end
+end
+
+-- Write the attackEnemy function below.
+local function attackEnemy()
+ local   enemy = self:findNearestEnemy()
+if enemy then
+    
+    self:attack(enemy)
+    end
+    end
+    
+-- Find the nearest enemy and attack them if they exist!
+
+while true do
+    -- attackEnemy() Uncomment this line after you write an attackEnemy function.
+    pickUpCoin()
+    attackEnemy()
+end
