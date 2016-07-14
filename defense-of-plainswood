@@ -1,0 +1,9 @@
+-- Construir dos fences(vallas) para mantener los aldeanos a salvo!
+-- Coloca tu mouse sobre el mundo para obtener las coordenadas X,Y
+hero:buildXY("fence", 40, 52)
+hero:buildXY("fence", 38, 52)
+hero:buildXY("fence", 43, 53)
+hero:buildXY("fence", 40, 20)
+hero:buildXY("fence", 38, 21)
+hero:buildXY("fence", 42, 20)
+hero:buildXY("fence", 36, 30)
